@@ -52,5 +52,5 @@ jobs:
             context: .
             push: true
             tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
-      -name: Image digest
-        run: echo "Image digest: ${{ steps.docker_build.outputs.digest }}"
+      - name: Image digest
+        run: echo  ${{ steps.docker_build.outputs.digest }}"
